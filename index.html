@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To Do List</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="icon" type="image/svg" href="/Media/favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Calistoga&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <audio src="./Media/click.mp3" id="add_task_btn_aud"></audio>
+    <audio src="./Media/complete.mp3" id="delete_btn_aud"></audio>
+    <audio
+      src="./Media/windows-error-sound-effect-35894 (1).mp3"
+      id="err"
+    ></audio>
+
+    <script src="./script.js"></script>
+
+    <div
+      style="width: fit-content; position: absolute; left: 425px; display: flex"
+    >
+      <h1 class="montserrat_heading">
+        <span style="text-decoration: line-through; color: #f7de32"
+          >Welcome</span
+        ><span style="color: #f7de32">,</span><br />Aeyien Aeyien ...
+      </h1>
+
+      <img
+        src="./Media/star.png"
+        alt=""
+        height="41.2px"
+        width="40px"
+        style="position: relative; right: 75px; top: 25px"
+      />
+    </div>
+
+    <div class="container">
+      <input
+        type="text"
+        id="text_input"
+        autocomplete="off"
+        placeholder="Enter Your Task"
+      />
+
+      <button id="add_task_btn">AddTask</button>
+
+      <div id="tenor_gif_container">
+        <img src="./Media/Ashneer.gif" alt="" height="250px" width="250px">
+      </div>
+
+      <ul id="task_list" style="list-style-type: none"></ul>
+    </div>
+  </body>
+</html>

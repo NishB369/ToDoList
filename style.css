@@ -1,0 +1,136 @@
+body {
+  background-image: url("./Media/background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+}
+
+.montserrat_heading {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  color: #ffffff;
+  text-align: center;
+  font-size: 50px;
+  line-height: 35px;
+  text-shadow: 1px 1px 10px #00000022;
+}
+
+.container {
+  height: 400px;
+  width: 350px;
+  border-radius: 12.5px;
+  background-color: #fff;
+  position: absolute;
+  left: 450px;
+  top: 150px;
+  box-shadow: 2px 2px 100px #00000054;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#text_input {
+  width: 312.5px;
+  height: 25px;
+  border: 1px solid black;
+  background: linear-gradient(
+    135deg,
+    #025fc9,
+    #095dc7,
+    #095dc7,
+    #0348b1,
+    #014aa8,
+    #05368d
+  );
+  position: relative;
+  top: 20px;
+  border-radius: 12.5px;
+  color: #f7de32;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+  text-align: center;
+}
+
+::placeholder {
+  color: #f7de32;
+  font-weight: lighter;
+}
+
+#add_task_btn {
+  position: relative;
+  top: 35px;
+  background-color: #f7de32;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 2.5px;
+  height: 25px;
+  width: 100px;
+  font-weight: bold;
+  color: #033290;
+  margin-bottom: 30px;
+  transition: transform 0.2s ease-out;
+  cursor: pointer;
+}
+
+#add_task_btn:active {
+  transform: translateY(-3px);
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+li {
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+  position: relative;
+  border: 1.5px solid black;
+  border-radius: 5px;
+  width: 292.5px;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 10px;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+#del_itm {
+  background: linear-gradient(
+    135deg,
+    #025fc9,
+    #095dc7,
+    #095dc7,
+    #0348b1,
+    #014aa8,
+    #05368d
+  );
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 2.5px;
+  height: 17.5px;
+  width: 43.75px;
+  color: #f7de32;
+  font-size: 11px;
+  margin-right: 10px;
+  transition: transform 0.2s ease-out;
+  cursor: pointer;
+}
+
+#del_itm:active {
+  transform: translateY(-3px);
+}
+
+#tenor_gif_container {
+  position: relative;
+  top: 25px;
+}
